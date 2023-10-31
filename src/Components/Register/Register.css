@@ -1,0 +1,30 @@
+
+.reg-password{
+        display: flex;
+        background-color: rgb(214, 237, 255);
+        padding: 5px;
+        gap: 10px;
+        position: relative;
+}
+.password-strength-strong{
+        font-family: 'Assistant', sans-serif;        position: absolute;
+       color: rgb(66, 65, 65);
+       align-self: flex-start;
+       right: 10px;
+       font-size: 12px;
+       top: 20%;
+       color: rgba(13, 17, 35, 0.867);
+       
+      
+}
+.password-strength-week{
+        font-family: 'Assistant', sans-serif;        position: absolute;
+       color: rgb(66, 65, 65);
+       align-self: flex-start;
+       right: 10px;
+       font-size: 12px;
+       top: 20%;
+       color: red;
+       
+      
+}

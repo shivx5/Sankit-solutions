@@ -1,0 +1,92 @@
+.login{
+        height: 100vh;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/154/173/260/blue-gradient-simple-wallhaven-wallpaper-preview.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        z-index: -999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+}
+.login-component{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        /* width: 100%; */
+}
+.login-profile{
+        width: 70px;
+        height: 70px;
+        /* border-radius: 50%; */
+        background: transparent;
+}
+.login-profile >img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        
+}
+.login-component>div:nth-of-type(2)
+{
+        display: flex;
+        background-color: rgb(214, 237, 255);
+        padding: 5px;
+        gap: 10px;
+       
+        
+}
+.login-component>div:nth-of-type(3)
+{
+        display: flex;
+        background-color: rgb(214, 237, 255);
+        padding: 5px;
+        gap: 10px;
+}
+
+.login-component>.forget
+{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        color: white;     
+       
+}
+.login-component>div>input{
+        border: none;
+        width: 15rem;
+        background-color: rgb(214, 237, 255);
+        /* font-family:'Raleway', sans-serif; */
+        font-weight: bold;
+
+        
+}
+.login-component>div>input:focus{
+        outline: none;
+}
+.login-remember{
+        display: flex;
+        align-items: center;
+        gap:10px;
+}
+.login-component>.submit-button{
+        cursor: pointer;
+        padding: 5px 25px 5px 25px;
+        color: white;
+        background-color: rgb(37, 37, 68);
+        border: none;
+        font-size: 10px;
+}
+.login-reg{
+        display: flex;
+        gap: 1rem;
+        font-size: 13px;
+        align-items: center;
+       
+
+}
