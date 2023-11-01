@@ -18,6 +18,7 @@ function Login() {
           password: password.current.value
         }
         console.log(data)
+        
   }
   return (
     <div className='login'>

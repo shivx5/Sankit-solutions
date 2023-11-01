@@ -1,11 +1,6 @@
 .login{
         height: 100vh;
-        background-image: url('https://c4.wallpaperflare.com/wallpaper/154/173/260/blue-gradient-simple-wallhaven-wallpaper-preview.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        z-index: -999;
+       
         display: flex;
         align-items: center;
         justify-content: center;

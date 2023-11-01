@@ -85,7 +85,7 @@ function Register() {
           </div>
           <div className='login-reg'>
           <span style={{color:"white",fontSize:"15px"}}>Already Registered ? </span>
-          <Link to='/login' style={{color:"white"}}>Login</Link>
+          <Link to='/' style={{color:"white"}}>Login</Link>
           </div>
           <input type='submit' value='REGISTER' className='submit-button'/>
           </form>

@@ -1,0 +1,57 @@
+.topbar{
+        padding-top: 2rem;
+        display: flex;
+        color: rgb(255, 255, 255);
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+}
+.t-logo{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 70px;
+        display: flex;
+        
+
+}
+.t-logo>div>img{
+        height: 100px;
+        width: 100px;
+}
+.t-content{
+        display: flex;
+        gap: 4rem;
+
+}
+.t-content>span{
+        cursor: pointer;
+        margin: 10px;
+}
+.t-content>span:hover{
+     color: rgb(0, 0, 0);
+}
+.t-profile{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+}
+.t-profile >div{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+}
+.t-profile>div>img{
+       width: 100%;
+       height: 100%;
+       border-radius: 50%;
+
+}
+.topbar span{
+        cursor: pointer;
+        
+}
+.t-content >span> Link{
+        text-decoration: none;
+        color: white;
+}
