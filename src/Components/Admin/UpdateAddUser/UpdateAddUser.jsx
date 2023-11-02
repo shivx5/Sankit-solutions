@@ -7,23 +7,26 @@ function UpdateAddUser() {
         const roles=useRef()
         const status=useRef()
         const mobile=useRef()
+        const domain=useRef()
 
-        function handleSubmit()
+        function handleSubmit(event)
         {
+            event.preventDefault();
                 const data={
                         username:username.current.value,
                         password:password.current.value,
                         email:email.current.value,
                         roles:roles.current.value,
                         status:status.current.value,
-                        mobile:mobile.current.value
+                        mobile:mobile.current.value,
+                        domain:domain.current.value
                 }
                 console.log(data);
         }
   return (
     <div className='updateuser'>
         
-       <form className='update-form'>
+       <form className='update-form' onSubmit={handleSubmit}>
 
        <div>
            <span>Add User / Update User</span>
@@ -34,16 +37,26 @@ function UpdateAddUser() {
        <div className='up-1'>
        <div>
            <label>UserName</label>
-           <input placeholder='Full Name' ref={username}/>
+           <input type='text' placeholder='Full Name' ref={username} required={true} minLength='5'/>
        </div>
        <div>
            <label>Email</label>
-           <input placeholder='Email' ref={email}/>
+           <input type='email' placeholder='Email' ref={email} required={true}/>
        </div>
 
        <div>
            <label>Password</label>
-           <input placeholder='Password' ref={password}/>
+           <input type='password' placeholder='Password' ref={password} required={true}/>
+       </div>
+
+       <div>
+           <label for='domain'>Domain</label>
+           <select name='Domain' id='domain' ref={domain}>
+                <option value="python">python</option>
+                <option value="React">react</option>
+                <option value="javascript">js</option>
+                <option value="java">js</option>
+           </select>
        </div>
        </div>
       <div className='up-1'>
@@ -57,11 +70,15 @@ function UpdateAddUser() {
        </div>
        <div>
            <label>Mobile</label>
-           <input placeholder='Mobile number' ref={mobile}/>
+           <input placeholder='Mobile number' ref={mobile} required={true}/>
        </div>
        <div>
-           <label>status</label>
-           <input placeholder='status' ref={status}/>
+        <label for='status'>status</label>
+       <select name='status' id='status' ref={status}>
+                <option value="fullTime">full-time</option>
+                <option value="partTime">part-time</option>
+                <option value="training">training</option>
+           </select>
        </div>
       </div>
       </div>

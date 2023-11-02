@@ -63,3 +63,14 @@ select{
         font-size: 13px;
         border-radius: .25rem;
 }
+
+@media (width<=600px)
+{
+        .up-parent{
+                flex-direction: column;
+                gap: 1rem;
+        }
+        .update-form{
+                gap: 1.5rem;
+        }
+}

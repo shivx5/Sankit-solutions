@@ -1,14 +1,16 @@
 import React from 'react'
-import './Employee.css'
+import './AllEmployee.css'
 import EmpDetails from '../EmpDetails/EmpDetails'
 import AdminNavbar from '../AdminNavbar/AdminNavbar'
 import {IoIosAdd} from 'react-icons/io'
+import {useNavigate} from 'react-router-dom'
 
-export default function Employee() {
+export default function AllEmployee() {
+  const navigate=useNavigate()
   console.log('Employee')
   return (
     <div className='employee'>
-     <div className='e-title'>
+     <div className='e-title' onClick={()=>navigate('/update')}>
       <span className='add-employee'>add employee</span>
       <span><IoIosAdd/></span>
      </div>

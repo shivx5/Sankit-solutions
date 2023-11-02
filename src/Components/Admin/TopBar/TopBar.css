@@ -21,7 +21,10 @@
 }
 .t-content{
         display: flex;
-        gap: 4rem;
+        /* gap: 2rem; */
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
 
 }
 .t-content>span{
@@ -51,7 +54,11 @@
         cursor: pointer;
         
 }
-.t-content >span> Link{
+
+/* .t-content>Link>span{
+       
+} */
+/* .hover-link{
         text-decoration: none;
         color: white;
-}
+} */

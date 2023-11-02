@@ -4,7 +4,7 @@ import unknown from '../../../assets/unknown.png'
 import {IoMdNotificationsOutline} from 'react-icons/io'
 import {BiLogoGmail} from 'react-icons/bi'
 import './TopBar.css'
-import { Link ,useNavigate} from 'react-router-dom'
+import { Link ,Outlet,useNavigate} from 'react-router-dom'
 export default function TopBar() {
   const navigate=useNavigate();
   return (
@@ -19,7 +19,7 @@ export default function TopBar() {
         <div className='t-content'>
               <span>Calender</span>
               <span>Static</span>
-              <span>Employee</span>
+              <Link to='/admin/allemployee'><span className='hover-link' style={{color:"white",textDecoration:"none"}}>Employee</span></Link>
               <span>Client</span>
               <span>Equipment</span>
         </div>
